@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;          
+    margin: 0;              
+    background-image: url('background.png'); /* 背景图片 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Arial', sans-serif; /* 全局字体 */
+}
+
+.操作面板 {
+    background-color: rgba(255, 255, 255, 0.85); /* 半透明白色背景 */
+    width: 350px; /* 增加面板宽度 */
+    padding: 40px; /* 增加内边距 */
+    margin-top: 20px;       
+    border-radius: 15px; /* 调整圆角大小 */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* 柔和的阴影 */
+}
+
+.输入区域 {
+    display: flex;
+    flex-direction: column; 
+}
+
+.密码区域 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; /* 增加顶部间距 */
+}
+
+.文字框 {
+    width: 100%; /* 确保宽度为父容器的100% */
+    border: none;
+    background-color: #F0F4F8;
+    padding: 12px 15px;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* 新增这一行 */
+}
+
+.按钮 {
+    background-color: #007BFF; /* 按钮背景色 */
+    color: white;
+    border: none;
+    padding: 12px 0;
+    font-size: 18px; /* 增大字体 */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.按钮:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景色 */
+}
+
+h1 {
+    font-size: 48px;          
+    color: #FFFFFF;           
+    text-align: center;       
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;        
+    margin-top: 0;         
+    margin-bottom: 30px;      
+    letter-spacing: 2px;      
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* 添加文本阴影 */
+}
+
+.额外选项 {
+    display: flex;
+    justify-content: space-between; /* 均匀分布按钮 */
+    margin-top: 20px; /* 增加顶部间距 */
+}
+
+.无边按钮 {
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.无边按钮:hover {
+    color: #666666; /* 鼠标悬停时颜色淡化 */
+}
